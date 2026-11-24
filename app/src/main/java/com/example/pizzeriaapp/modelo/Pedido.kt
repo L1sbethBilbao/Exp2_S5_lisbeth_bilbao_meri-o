@@ -16,7 +16,11 @@ class Pedido(
     var estado: String = "En preparación",
     val notas: String? = null,
     var repartidor: Repartidor? = null,
-    val fecha: LocalDate = LocalDate.now()
+    val fecha: LocalDate = LocalDate.now(),
+    /** retiro | domicilio | local */
+    var tipoEntrega: String = "retiro",
+    /** Número con el que se llama al cliente. */
+    var numeroAtencion: Int = 0
 ) {
     fun calcularTotales(): ResultadoTotales =
         Calculos.calcularTotales(productos, cantidad, fecha)

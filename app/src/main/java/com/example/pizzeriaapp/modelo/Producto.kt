@@ -60,10 +60,24 @@ class PizzaHawaiana : Producto(
     ingredientes = listOf("masa", "queso", "tomate")
 )
 
-/** Bebida para demostrar categoría distinta en equals / ==. */
+/** Bebidas (stock por clave en inventario). */
 class BebidaCola : Producto(
     nombre = "Coca-Cola",
     precio = 1500.0,
     categoria = "bebida",
-    ingredientes = emptyList()
+    ingredientes = listOf("coca-cola")
+)
+
+class BebidaSprite : Producto(
+    nombre = "Sprite",
+    precio = 1400.0,
+    categoria = "bebida",
+    ingredientes = listOf("sprite")
+)
+
+class BebidaJugo : Producto(
+    nombre = "Jugo natural",
+    precio = 1800.0,
+    categoria = "bebida",
+    ingredientes = listOf("jugo")
 )

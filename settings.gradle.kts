@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PizzeriaApp"
+rootProject.name = "S5_android_studio"
 include(":app")
